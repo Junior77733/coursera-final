@@ -199,3 +199,57 @@ main {
     }
 }
 
+.footer {
+    display:grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: auto auto;
+    background-color:#ceb5b5;
+}
+
+.footer > img {
+    padding:10px;
+}
+
+.socials {
+    display:flex;
+    padding-top:15px;
+    justify-content: start;
+    
+}
+
+.socials > li > img {
+    width:30px;
+    height:30px;
+    padding:5px;
+}
+
+.socials > li {
+    list-style-type: none;
+}
+
+.entry1 {
+    padding:10px;
+}
+
+.entry4 {
+    display:flex;
+    justify-content: end;
+    padding:10px;
+}
+
+.about {
+    list-style-type: none;
+    font-family: "Roboto Condensed";
+    padding:10px;
+}
+
+.footer-heading {
+    font-family: "Roboto Condensed";
+    font-size: large;
+    padding-bottom: 15px;
+}
+
+.top-recipes {
+    border-bottom:5px dotted black;
+    margin:0px 5px 0px 5px;
+}

@@ -14,7 +14,7 @@ export default function Header() {
     
     return (
         <>
-            <header className="header-logo">
+            <header>
                 <img src={logo} width='200px'/>
                 <button className="mobile-btn" onClick={toggleNavigation}>
                     <img src={menu_icon} width='30px'/>

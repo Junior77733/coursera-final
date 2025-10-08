@@ -1,8 +1,10 @@
 import MenuBG from '../assets/menu-bg.jpg'
+import Recipes from './Recipes'
 
 export default function MainContent() {
 
     return (
+        <>
         <main>
             <div className='reserve-table'>
                 <img src={MenuBG} />
@@ -13,10 +15,10 @@ export default function MainContent() {
                         <span className='second-line'>IS THE ENEMY OF</span>
                         <br/>
                         <span className='third-line'>CREATIVITY</span>
-                        </h1>
+                    </h1>
                 </div>
                 <p className='mobile-banner-sub-text'>
-                    We believe that food is more than just sustenance
+                    We believe that food is more than just sustenance,
                     <br />
                     It is an experience. Our menu features a variety
                     <br />
@@ -27,7 +29,7 @@ export default function MainContent() {
                     and inviting atmosphere
                 </p>
                 <p className='desktop-banner-sub-text'>
-                    We believe that food is more than just sustenance
+                    We believe that food is more than just sustenance,
                     <br />
                     It is an experience. Our menu features a variety
                     <br />
@@ -41,5 +43,9 @@ export default function MainContent() {
                 <button className='desktop-reserve-btn'>Reserve a Table</button>
             </div>
         </main>
+        <div>
+            <Recipes />
+        </div>
+        </>
     )
 }
