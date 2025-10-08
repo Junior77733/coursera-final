@@ -1,17 +1,26 @@
+import { useState } from 'react'
 import logo from '../assets/little lemon.jpg'
 import menu_icon from '../assets/burger_icon.png'
 import NavBar from './NavBar'
 
 
 export default function Header() {
+
+    const [dropBtn, setDropBtn] = useState(false)
+
+    const toggleNavigation = () => {
+        setDropBtn(!dropBtn)
+    }
     
     return (
         <>
             <header className="header-logo">
                 <img src={logo} width='200px'/>
-                <button><img src={menu_icon} width='30px'/></button>
+                <button className="mobile-btn" onClick={toggleNavigation}>
+                    <img src={menu_icon} width='30px'/>
+                </button>
             </header>
-            <NavBar />
+            <NavBar btnData={dropBtn}/>
         </>
     )
 }
