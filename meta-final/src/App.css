@@ -251,5 +251,79 @@ main {
 
 .top-recipes {
     border-bottom:5px dotted black;
-    margin:0px 5px 0px 5px;
+    margin:20px 5px 30px 5px;
 }
+
+.container {
+    display:grid;
+    grid-template-columns: 300px 1fr;
+    gap:20px;
+    align-items: center;
+    margin: 0px 5px 10px 5px;
+    transition: 0.3s;
+}
+
+.container:hover {
+    scale:1.1;
+    border:2px solid black;
+}
+
+.image-container > img {
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.content-container {
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: space-between;
+}
+
+.cta-section {
+    display:flex;
+    align-items: end;
+    justify-content: flex-end;
+    gap:20px;
+}
+
+.title-card {
+    font-family: "Roboto Condensed";
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.tag-text {
+    font-family:"Roboto Condensed";
+    background-color: rgb(234, 227, 227);
+    padding:0.2rem;
+    border-radius: 2px;
+    font-size: small;
+}
+
+.card-description {
+    font-family: "Roboto Condensed";
+}
+
+.order-button {
+    width:200px;
+    height:50px;
+    border:none;
+    background-color: yellowgreen;
+    color:white;
+    font-family: "Roboto Condensed";
+    font-size:large;
+    margin:10px 10px 10px 10px;
+}
+
+.price {
+    font-family: "Roboto Condensed";
+    font-size: large;
+    margin:10px 10px 10px 10px;
+}
+
